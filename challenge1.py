@@ -8,4 +8,12 @@
 # that, given an array A of N integers, returns the minimum number of moves needed to end up with exactly 10 bricks in every box. If this is not possible, the function should return −1.
 
 def solution(A):
-    pass
+    target_bricks = 10
+    moves_required = 0
+
+    # Iterate through each box except the last one
+    for i in range(len(A) -1):
+        # Calculate the difference between bricks in the current box and the target
+        difference = A[i] - target_bricks
+
+        
