@@ -20,8 +20,21 @@ def solution(A):
 
         # check If the current box has more than 10 bricks
         if box > 10:
+            #  Get the difference
             difference = box - 10
             A[index] = 10
+            #  Add the difference to the next element
             A[next_index] = next_box + difference
             steps += difference
-      
+        # check If the current box has fewer than 10 bricks
+        elif box < 10:
+            difference = 10 - box
+            A[index] = 10
+            A[next_index] = next_box - difference
+            steps += difference
+        # If the current box has exactly 10 bricks, no adjustments needed
+
+    return steps
+
+# Test purpose
+print(solution([7, 15, 10, 8])) 
