@@ -9,8 +9,12 @@ def soluion(A):
     max_sum = -1  
 
 
-   # Iterate through each pair of numbers in the array
+   # Iterate through each pair of numbers in the list
     for first_num in A:
         for second_num in A:
+            # Calculate the sum of digits for both numbers
+            first_num_digit_sum = sum(int(digit) for digit in str(first_num))
+            second_num_digit_sum = sum(int(digit) for digit in str(second_num))
+
 
     
