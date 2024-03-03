@@ -6,3 +6,6 @@ def solution(N):
 
     # Generate the repeated sequence of lowercase letters
     repeated_letters = ''.join(chr(ord('a') + i % 26) for i in range(num_repeats * 26))
+
+    # Trim the sequence to the desired length N
+    result = repeated_letters[:N]
