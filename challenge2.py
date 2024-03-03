@@ -16,5 +16,6 @@ def soluion(A):
             first_num_digit_sum = sum(int(digit) for digit in str(first_num))
             second_num_digit_sum = sum(int(digit) for digit in str(second_num))
 
-
-    
+            # If the sum of digits is equal for both numbers, update the maximum sum
+            if first_num_digit_sum == second_num_digit_sum:
+                max_sum = max(max_sum, first_num + second_num)
