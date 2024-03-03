@@ -10,3 +10,6 @@ def solution(N):
     # Trim the sequence to the desired length N
     result = repeated_letters[:N]
     return result
+
+#test purpose
+print(solution(10))
