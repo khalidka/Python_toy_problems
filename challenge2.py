@@ -9,6 +9,8 @@ def soluion(A):
     max_sum = -1  
 
 
-   
+   # Iterate through each pair of numbers in the array
+    for first_num in A:
+        for second_num in A:
 
     
