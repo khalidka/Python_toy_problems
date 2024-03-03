@@ -18,4 +18,10 @@ def solution(A):
         next_index = index + 1
         next_box = A[next_index]
 
+        # check If the current box has more than 10 bricks
+        if box > 10:
+            difference = box - 10
+            A[index] = 10
+            A[next_index] = next_box + difference
+            steps += difference
       
