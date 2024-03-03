@@ -38,3 +38,5 @@ def solution(A):
 
 # Test purpose
 print(solution([7, 15, 10, 8])) 
+print(solution([11, 10, 8, 12, 8, 10, 11])) 
+print(solution([7, 14, 10])) 
