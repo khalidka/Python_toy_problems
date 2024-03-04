@@ -2,7 +2,7 @@
 
 ## Challenge 1
 
-##Overview
+## Overview
 -Problem Statement:
 Given an array A of N integers representing the number of bricks in each box, determine the minimum number of moves needed to ensure that every box contains exactly 10 bricks. In one move, you can take one brick from a box and move it to a box next to it (on the left or right). If it's impossible to achieve the goal, return -1.
 
